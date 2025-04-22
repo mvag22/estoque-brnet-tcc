@@ -1,0 +1,10 @@
+H:\Meu Drive\tcc - estoque brnet\ApiBrnetEstoque\obj\Debug\net8.0\ApiBrnetEstoque.csproj.AssemblyReference.cache
+H:\Meu Drive\tcc - estoque brnet\ApiBrnetEstoque\obj\Debug\net8.0\ApiBrnetEstoque.GeneratedMSBuildEditorConfig.editorconfig
+H:\Meu Drive\tcc - estoque brnet\ApiBrnetEstoque\obj\Debug\net8.0\ApiBrnetEstoque.AssemblyInfoInputs.cache
+H:\Meu Drive\tcc - estoque brnet\ApiBrnetEstoque\obj\Debug\net8.0\ApiBrnetEstoque.AssemblyInfo.cs
+H:\Meu Drive\tcc - estoque brnet\ApiBrnetEstoque\obj\Debug\net8.0\ApiBrnetEstoque.csproj.CoreCompileInputs.cache
+H:\Meu Drive\tcc - estoque brnet\ApiBrnetEstoque\obj\Debug\net8.0\ApiBrnetEstoque.MvcApplicationPartsAssemblyInfo.cs
+H:\Meu Drive\tcc - estoque brnet\ApiBrnetEstoque\obj\Debug\net8.0\ApiBrnetEstoque.MvcApplicationPartsAssemblyInfo.cache
+H:\Meu Drive\tcc - estoque brnet\ApiBrnetEstoque\obj\Debug\net8.0\ApiBrnetEstoque.dll
+H:\Meu Drive\tcc - estoque brnet\ApiBrnetEstoque\obj\Debug\net8.0\refint\ApiBrnetEstoque.dll
+H:\Meu Drive\tcc - estoque brnet\ApiBrnetEstoque\obj\Debug\net8.0\ApiBrnetEstoque.pdb
