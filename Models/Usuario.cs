@@ -1,16 +1,27 @@
-﻿namespace ApiBrnetEstoque.Models
-{
-    public class Usuario
-    {
-        public int IdUsuario { get; set; }
-        public string Nome { get; set; } = string.Empty;
-        public string UsuarioLogin { get; set; } = string.Empty;
-        public string Senha { get; set; } = string.Empty;
-        public string Perfil { get; set; } = string.Empty; // "admin_estoque" ou "tecnico"
+﻿using System;
+using System.Collections.Generic;
 
-        // Relacionamentos
-        public ICollection<ChecklistVeiculo>? Checklists { get; set; }
-        public ICollection<EquipamentoReserva>? Equipamentos { get; set; }
-        public ICollection<MovimentacaoEstoque>? Movimentacoes { get; set; }
-    }
+namespace ApiBrnetEstoque.Models;
+
+public partial class Usuario
+{
+    public int IdUsuario { get; set; }
+
+    public string Nome { get; set; } = null!;
+
+    public string Usuario1 { get; set; } = null!;
+
+    public string Senha { get; set; } = null!;
+
+    public string Perfil { get; set; } = null!;
+
+    public virtual ICollection<ChecklistVeiculo> ChecklistVeiculos { get; set; } = new List<ChecklistVeiculo>();
+
+    public virtual ICollection<ControleKm> ControleKmUsuarioId1Navigations { get; set; } = new List<ControleKm>();
+
+    public virtual ICollection<ControleKm> ControleKmUsuarioId2Navigations { get; set; } = new List<ControleKm>();
+
+    public virtual ICollection<EquipamentoReserva> EquipamentoReservas { get; set; } = new List<EquipamentoReserva>();
+
+    public virtual ICollection<MovimentacaoEstoque> MovimentacaoEstoques { get; set; } = new List<MovimentacaoEstoque>();
 }

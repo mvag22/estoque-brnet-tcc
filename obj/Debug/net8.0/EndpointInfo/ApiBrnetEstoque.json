@@ -1,0 +1,3394 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "ApiBrnetEstoque",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/controlekm/{controleKmId}/Atendimentos": {
+      "get": {
+        "tags": [
+          "Atendimentos"
+        ],
+        "parameters": [
+          {
+            "name": "controleKmId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AtendimentoDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AtendimentoDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AtendimentoDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Atendimentos"
+        ],
+        "parameters": [
+          {
+            "name": "controleKmId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/controlekm/{controleKmId}/Atendimentos/{id}": {
+      "get": {
+        "tags": [
+          "Atendimentos"
+        ],
+        "operationId": "GetAtendimentoById",
+        "parameters": [
+          {
+            "name": "controleKmId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Atendimentos"
+        ],
+        "parameters": [
+          {
+            "name": "controleKmId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Atendimentos"
+        ],
+        "parameters": [
+          {
+            "name": "controleKmId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/register": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ChecklistVeiculo": {
+      "get": {
+        "tags": [
+          "ChecklistVeiculo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChecklistVeiculoDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChecklistVeiculoDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChecklistVeiculoDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ChecklistVeiculo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChecklistVeiculoCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChecklistVeiculoCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChecklistVeiculoCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChecklistVeiculoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChecklistVeiculoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChecklistVeiculoDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChecklistVeiculo/{id}": {
+      "get": {
+        "tags": [
+          "ChecklistVeiculo"
+        ],
+        "operationId": "GetChecklistById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChecklistVeiculoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChecklistVeiculoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChecklistVeiculoDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ChecklistVeiculo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChecklistVeiculoUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChecklistVeiculoUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChecklistVeiculoUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ChecklistVeiculo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ControleKm": {
+      "get": {
+        "tags": [
+          "ControleKm"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ControleKmDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ControleKmDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ControleKmDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ControleKm"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControleKmCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControleKmCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControleKmCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControleKmDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControleKmDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControleKmDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ControleKm/{id}": {
+      "get": {
+        "tags": [
+          "ControleKm"
+        ],
+        "operationId": "GetControleKmById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControleKmDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControleKmDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControleKmDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ControleKm"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControleKmUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControleKmUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControleKmUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ControleKm"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/EquipamentoReserva": {
+      "get": {
+        "tags": [
+          "EquipamentoReserva"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EquipamentoReservaDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EquipamentoReservaDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EquipamentoReservaDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EquipamentoReserva"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquipamentoReservaCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquipamentoReservaCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquipamentoReservaCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EquipamentoReservaDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EquipamentoReservaDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EquipamentoReservaDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/EquipamentoReserva/{id}": {
+      "get": {
+        "tags": [
+          "EquipamentoReserva"
+        ],
+        "operationId": "GetEquipReservaById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EquipamentoReservaDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EquipamentoReservaDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EquipamentoReservaDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EquipamentoReserva"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquipamentoReservaUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquipamentoReservaUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EquipamentoReservaUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EquipamentoReserva"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Material": {
+      "get": {
+        "tags": [
+          "Material"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaterialDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaterialDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaterialDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Material"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaterialCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaterialCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaterialCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaterialDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaterialDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaterialDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Material/{id}": {
+      "get": {
+        "tags": [
+          "Material"
+        ],
+        "operationId": "GetMaterialById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaterialDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaterialDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaterialDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Material"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaterialUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaterialUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaterialUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Material"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MovimentacaoEstoque": {
+      "get": {
+        "tags": [
+          "MovimentacaoEstoque"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MovimentacaoEstoqueDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MovimentacaoEstoqueDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MovimentacaoEstoqueDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MovimentacaoEstoque"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoEstoqueCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoEstoqueCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoEstoqueCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoEstoqueDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoEstoqueDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoEstoqueDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MovimentacaoEstoque/{id}": {
+      "get": {
+        "tags": [
+          "MovimentacaoEstoque"
+        ],
+        "operationId": "GetMovimentacaoById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoEstoqueDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoEstoqueDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoEstoqueDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MovimentacaoEstoque"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoEstoqueUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoEstoqueUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoEstoqueUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MovimentacaoEstoque"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MovimentacaoMaterial": {
+      "get": {
+        "tags": [
+          "MovimentacaoMaterial"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MovimentacaoMaterialDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MovimentacaoMaterialDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MovimentacaoMaterialDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MovimentacaoMaterial"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoMaterialCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoMaterialCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoMaterialCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoMaterialDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoMaterialDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoMaterialDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MovimentacaoMaterial/{id}": {
+      "get": {
+        "tags": [
+          "MovimentacaoMaterial"
+        ],
+        "operationId": "GetMovMaterialById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoMaterialDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoMaterialDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MovimentacaoMaterialDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MovimentacaoMaterial"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoMaterialUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoMaterialUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MovimentacaoMaterialUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MovimentacaoMaterial"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/relatorios/checklist": {
+      "get": {
+        "tags": [
+          "RelatorioChecklist"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VRelatorioChecklist"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VRelatorioChecklist"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VRelatorioChecklist"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/relatorios/estoque-geral": {
+      "get": {
+        "tags": [
+          "RelatorioEstoqueGeral"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VEstoqueGeral"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VEstoqueGeral"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VEstoqueGeral"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/relatorios/km": {
+      "get": {
+        "tags": [
+          "RelatorioKm"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VRelatorioKm"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VRelatorioKm"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VRelatorioKm"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/relatorios/movimentacao": {
+      "get": {
+        "tags": [
+          "RelatorioMovimentacao"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VRelatorioMovimentacao"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VRelatorioMovimentacao"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VRelatorioMovimentacao"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Veiculo": {
+      "get": {
+        "tags": [
+          "Veiculo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VeiculoDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VeiculoDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VeiculoDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Veiculo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VeiculoCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VeiculoCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VeiculoCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/VeiculoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VeiculoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VeiculoDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Veiculo/{id}": {
+      "get": {
+        "tags": [
+          "Veiculo"
+        ],
+        "operationId": "GetVeiculoById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/VeiculoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VeiculoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VeiculoDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Veiculo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VeiculoUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VeiculoUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VeiculoUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Veiculo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Atendimento": {
+        "type": "object",
+        "properties": {
+          "idAtendimentos": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hora": {
+            "type": "string",
+            "format": "time",
+            "nullable": true
+          },
+          "codCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomeCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "observacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "controleKmId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "controleKm": {
+            "$ref": "#/components/schemas/ControleKm"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtendimentoCreateDto": {
+        "required": [
+          "hora"
+        ],
+        "type": "object",
+        "properties": {
+          "hora": {
+            "type": "string",
+            "format": "time"
+          },
+          "codCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomeCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "observacao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtendimentoDto": {
+        "type": "object",
+        "properties": {
+          "idAtendimentos": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hora": {
+            "type": "string",
+            "format": "time",
+            "nullable": true
+          },
+          "codCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomeCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "observacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "controleKmId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtendimentoUpdateDto": {
+        "required": [
+          "hora"
+        ],
+        "type": "object",
+        "properties": {
+          "hora": {
+            "type": "string",
+            "format": "time"
+          },
+          "codCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomeCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "observacao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChecklistVeiculo": {
+        "type": "object",
+        "properties": {
+          "idChecklist": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data": {
+            "type": "string",
+            "format": "date"
+          },
+          "kmAtual": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kmTrocaOleo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "veiculoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "obsOleoFreio": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsAguaRadiador": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsBuzina": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEspelhoRetrovisor": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsTriangulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsFreioEstacionamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEstepe": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsVidroParabrisa": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsPortas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsPneus": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsFarolFaroletes": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsLimpadorParabrisas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsSetas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsLuzesRe": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsMotorLimpo": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsCones": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEscadas": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
+          },
+          "veiculo": {
+            "$ref": "#/components/schemas/Veiculo"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChecklistVeiculoCreateDto": {
+        "required": [
+          "data",
+          "kmAtual",
+          "usuarioId",
+          "veiculoId"
+        ],
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string",
+            "format": "date"
+          },
+          "kmAtual": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kmTrocaOleo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "veiculoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "obsOleoFreio": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsAguaRadiador": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsBuzina": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEspelhoRetrovisor": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsTriangulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsFreioEstacionamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEstepe": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsVidroParabrisa": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsPortas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsPneus": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsFarolFaroletes": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsLimpadorParabrisas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsSetas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsLuzesRe": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsMotorLimpo": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsCones": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEscadas": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChecklistVeiculoDto": {
+        "type": "object",
+        "properties": {
+          "idChecklist": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data": {
+            "type": "string",
+            "format": "date"
+          },
+          "kmAtual": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kmTrocaOleo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "veiculoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "obsOleoFreio": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsAguaRadiador": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsBuzina": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEspelhoRetrovisor": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsTriangulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsFreioEstacionamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEstepe": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsVidroParabrisa": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsPortas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsPneus": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsFarolFaroletes": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsLimpadorParabrisas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsSetas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsLuzesRe": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsMotorLimpo": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsCones": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEscadas": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChecklistVeiculoUpdateDto": {
+        "required": [
+          "data",
+          "kmAtual",
+          "usuarioId",
+          "veiculoId"
+        ],
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string",
+            "format": "date"
+          },
+          "kmAtual": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kmTrocaOleo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "veiculoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "obsOleoFreio": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsAguaRadiador": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsBuzina": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEspelhoRetrovisor": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsTriangulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsFreioEstacionamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEstepe": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsVidroParabrisa": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsPortas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsPneus": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsFarolFaroletes": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsLimpadorParabrisas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsSetas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsLuzesRe": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsMotorLimpo": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsCones": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEscadas": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ControleKm": {
+        "type": "object",
+        "properties": {
+          "idKm": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data": {
+            "type": "string",
+            "format": "date"
+          },
+          "veiculoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId2": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "atendimentos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Atendimento"
+            },
+            "nullable": true
+          },
+          "usuarioId1Navigation": {
+            "$ref": "#/components/schemas/Usuario"
+          },
+          "usuarioId2Navigation": {
+            "$ref": "#/components/schemas/Usuario"
+          },
+          "veiculo": {
+            "$ref": "#/components/schemas/Veiculo"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ControleKmCreateDto": {
+        "required": [
+          "data",
+          "usuarioId1",
+          "veiculoId"
+        ],
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string",
+            "format": "date"
+          },
+          "veiculoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId2": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ControleKmDto": {
+        "type": "object",
+        "properties": {
+          "idKm": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data": {
+            "type": "string",
+            "format": "date"
+          },
+          "veiculoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId2": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ControleKmUpdateDto": {
+        "required": [
+          "data",
+          "usuarioId1",
+          "veiculoId"
+        ],
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string",
+            "format": "date"
+          },
+          "veiculoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId2": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EquipamentoReserva": {
+        "type": "object",
+        "properties": {
+          "idEquipamento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mac": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "codCliente": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "defeito": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataPegou": {
+            "type": "string",
+            "format": "date"
+          },
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EquipamentoReservaCreateDto": {
+        "required": [
+          "dataPegou",
+          "mac",
+          "usuarioId"
+        ],
+        "type": "object",
+        "properties": {
+          "mac": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string"
+          },
+          "tipo": {
+            "maxLength": 45,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "maxLength": 45,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "codCliente": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "defeito": {
+            "maxLength": 150,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dataPegou": {
+            "type": "string",
+            "format": "date"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EquipamentoReservaDto": {
+        "type": "object",
+        "properties": {
+          "idEquipamento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mac": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "codCliente": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "defeito": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataPegou": {
+            "type": "string",
+            "format": "date"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EquipamentoReservaUpdateDto": {
+        "type": "object",
+        "properties": {
+          "mac": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "tipo": {
+            "maxLength": 45,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "maxLength": 45,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "codCliente": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "defeito": {
+            "maxLength": 150,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dataPegou": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginDto": {
+        "required": [
+          "senha",
+          "usuarioLogin"
+        ],
+        "type": "object",
+        "properties": {
+          "usuarioLogin": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "senha": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaterialCreateDto": {
+        "required": [
+          "nome"
+        ],
+        "type": "object",
+        "properties": {
+          "nome": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "marca": {
+            "maxLength": 45,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "maxLength": 45,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaterialDto": {
+        "required": [
+          "nome"
+        ],
+        "type": "object",
+        "properties": {
+          "idMaterial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "marca": {
+            "maxLength": 45,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "maxLength": 45,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaterialEstoque": {
+        "type": "object",
+        "properties": {
+          "idMaterial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "marca": {
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "movimentacaoMaterials": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovimentacaoMaterial"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MaterialUpdateDto": {
+        "required": [
+          "nome"
+        ],
+        "type": "object",
+        "properties": {
+          "nome": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "marca": {
+            "maxLength": 45,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "maxLength": 45,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovimentacaoEstoque": {
+        "type": "object",
+        "properties": {
+          "idMovimentacao": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataMovimentacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "observacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoMovimentacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "movimentacaoMaterials": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovimentacaoMaterial"
+            },
+            "nullable": true
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovimentacaoEstoqueCreateDto": {
+        "required": [
+          "materialId",
+          "quantidade",
+          "tipoMovimentacao",
+          "usuarioId"
+        ],
+        "type": "object",
+        "properties": {
+          "materialId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipoMovimentacao": {
+            "minLength": 1,
+            "pattern": "entrada|saida_manual|retirada_tecnico",
+            "type": "string"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovimentacaoEstoqueDto": {
+        "type": "object",
+        "properties": {
+          "idMovimentacao": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataMovimentacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "observacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoMovimentacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovimentacaoEstoqueUpdateDto": {
+        "required": [
+          "materialId",
+          "quantidade",
+          "tipoMovimentacao",
+          "usuarioId"
+        ],
+        "type": "object",
+        "properties": {
+          "materialId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipoMovimentacao": {
+            "minLength": 1,
+            "pattern": "entrada|saida_manual|retirada_tecnico",
+            "type": "string"
+          },
+          "observacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovimentacaoMaterial": {
+        "type": "object",
+        "properties": {
+          "idMovMaterial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "movimentacaoEstoqueId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "materialEstoqueId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "materialEstoque": {
+            "$ref": "#/components/schemas/MaterialEstoque"
+          },
+          "movimentacaoEstoque": {
+            "$ref": "#/components/schemas/MovimentacaoEstoque"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovimentacaoMaterialCreateDto": {
+        "required": [
+          "materialEstoqueId",
+          "movimentacaoEstoqueId",
+          "quantidade"
+        ],
+        "type": "object",
+        "properties": {
+          "movimentacaoEstoqueId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "materialEstoqueId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidade": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovimentacaoMaterialDto": {
+        "type": "object",
+        "properties": {
+          "idMovMaterial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "movimentacaoEstoqueId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "materialEstoqueId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovimentacaoMaterialUpdateDto": {
+        "required": [
+          "quantidade"
+        ],
+        "type": "object",
+        "properties": {
+          "quantidade": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterDto": {
+        "required": [
+          "nome",
+          "perfil",
+          "senha",
+          "usuarioLogin"
+        ],
+        "type": "object",
+        "properties": {
+          "nome": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "usuarioLogin": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "senha": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "perfil": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Usuario": {
+        "type": "object",
+        "properties": {
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario1": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          },
+          "perfil": {
+            "type": "string",
+            "nullable": true
+          },
+          "checklistVeiculos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChecklistVeiculo"
+            },
+            "nullable": true
+          },
+          "controleKmUsuarioId1Navigations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ControleKm"
+            },
+            "nullable": true
+          },
+          "controleKmUsuarioId2Navigations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ControleKm"
+            },
+            "nullable": true
+          },
+          "equipamentoReservas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EquipamentoReserva"
+            },
+            "nullable": true
+          },
+          "movimentacaoEstoques": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MovimentacaoEstoque"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VEstoqueGeral": {
+        "type": "object",
+        "properties": {
+          "idMaterial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "marca": {
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VRelatorioChecklist": {
+        "type": "object",
+        "properties": {
+          "idChecklist": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataChecklist": {
+            "type": "string",
+            "format": "date"
+          },
+          "placaVeiculo": {
+            "type": "string",
+            "nullable": true
+          },
+          "modeloVeiculo": {
+            "type": "string",
+            "nullable": true
+          },
+          "tecnico": {
+            "type": "string",
+            "nullable": true
+          },
+          "kmAtual": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kmTrocaOleo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "obsOleoFreio": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsAguaRadiador": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsBuzina": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEspelhoRetrovisor": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsTriangulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsFreioEstacionamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEstepe": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsVidroParabrisa": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsPortas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsPneus": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsFarolFaroletes": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsLimpadorParabrisas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsSetas": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsLuzesRe": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsMotorLimpo": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsCones": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsEscadas": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VRelatorioKm": {
+        "type": "object",
+        "properties": {
+          "idKm": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataControle": {
+            "type": "string",
+            "format": "date"
+          },
+          "placaVeiculo": {
+            "type": "string",
+            "nullable": true
+          },
+          "modeloVeiculo": {
+            "type": "string",
+            "nullable": true
+          },
+          "tecnico1": {
+            "type": "string",
+            "nullable": true
+          },
+          "tecnico2": {
+            "type": "string",
+            "nullable": true
+          },
+          "horaAtendimento": {
+            "type": "string",
+            "format": "time",
+            "nullable": true
+          },
+          "codCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomeCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "obsAtendimento": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VRelatorioMovimentacao": {
+        "type": "object",
+        "properties": {
+          "idMov": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataMov": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tipoMovimentacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "idMaterial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeMaterial": {
+            "type": "string",
+            "nullable": true
+          },
+          "marcaMaterial": {
+            "type": "string",
+            "nullable": true
+          },
+          "modeloMaterial": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantidadeMov": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "obsMov": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Veiculo": {
+        "type": "object",
+        "properties": {
+          "idVeiculo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "placa": {
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "checklistVeiculos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChecklistVeiculo"
+            },
+            "nullable": true
+          },
+          "controleKms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ControleKm"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VeiculoCreateDto": {
+        "required": [
+          "modelo",
+          "placa"
+        ],
+        "type": "object",
+        "properties": {
+          "placa": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "modelo": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VeiculoDto": {
+        "required": [
+          "modelo",
+          "placa"
+        ],
+        "type": "object",
+        "properties": {
+          "idVeiculo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "placa": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "modelo": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VeiculoUpdateDto": {
+        "required": [
+          "modelo",
+          "placa"
+        ],
+        "type": "object",
+        "properties": {
+          "placa": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "modelo": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

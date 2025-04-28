@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiBrnetEstoque")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3050df0b5d94e6c278ed08061787a0d57ea83fef")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiBrnetEstoque")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiBrnetEstoque")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

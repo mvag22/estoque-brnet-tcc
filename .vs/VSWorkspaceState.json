@@ -3,9 +3,10 @@
     "",
     "\\Controllers",
     "\\Data",
+    "\\DTOs",
     "\\Models",
     "\\Properties"
   ],
-  "SelectedNode": "\\ApiBrnetEstoque.sln",
+  "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": true
 }

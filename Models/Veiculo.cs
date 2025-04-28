@@ -1,13 +1,17 @@
-﻿namespace ApiBrnetEstoque.Models
-{
-    public class Veiculo
-    {
-        public int IdVeiculo { get; set; }
-        public string Placa { get; set; } = string.Empty;
-        public string Modelo { get; set; } = string.Empty;
+﻿using System;
+using System.Collections.Generic;
 
-        // Relacionamentos
-        public ICollection<ChecklistVeiculo>? Checklists { get; set; }
-        public ICollection<ControleKm>? ControlesKm { get; set; }
-    }
+namespace ApiBrnetEstoque.Models;
+
+public partial class Veiculo
+{
+    public int IdVeiculo { get; set; }
+
+    public string Placa { get; set; } = null!;
+
+    public string Modelo { get; set; } = null!;
+
+    public virtual ICollection<ChecklistVeiculo> ChecklistVeiculos { get; set; } = new List<ChecklistVeiculo>();
+
+    public virtual ICollection<ControleKm> ControleKms { get; set; } = new List<ControleKm>();
 }

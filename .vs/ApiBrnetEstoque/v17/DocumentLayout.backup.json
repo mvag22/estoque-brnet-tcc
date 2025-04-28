@@ -1,38 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\",
+  "WorkspaceRootPath": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|h:\\meu drive\\tcc - estoque brnet\\apibrnetestoque\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|c:\\users\\marco\\desktop\\brnet_app\\apibrnetestoque\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|h:\\meu drive\\tcc - estoque brnet\\apibrnetestoque\\models\\veiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:models\\veiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|c:\\users\\marco\\desktop\\brnet_app\\apibrnetestoque\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|h:\\meu drive\\tcc - estoque brnet\\apibrnetestoque\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|c:\\users\\marco\\desktop\\brnet_app\\apibrnetestoque\\controllers\\movimentacaoestoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:controllers\\movimentacaoestoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|h:\\meu drive\\tcc - estoque brnet\\apibrnetestoque\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|c:\\users\\marco\\desktop\\brnet_app\\apibrnetestoque\\dtos\\movimentacaoestoque\\movimentacaoestoquecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:dtos\\movimentacaoestoque\\movimentacaoestoquecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|h:\\meu drive\\tcc - estoque brnet\\apibrnetestoque\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|c:\\users\\marco\\desktop\\brnet_app\\apibrnetestoque\\dtos\\movimentacaoestoque\\movimentacaoestoqueupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:dtos\\movimentacaoestoque\\movimentacaoestoqueupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|h:\\meu drive\\tcc - estoque brnet\\apibrnetestoque\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|c:\\users\\marco\\desktop\\brnet_app\\apibrnetestoque\\services\\kmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:services\\kmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|h:\\meu drive\\tcc - estoque brnet\\apibrnetestoque\\apibrnetestoque.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:apibrnetestoque.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|c:\\users\\marco\\desktop\\brnet_app\\apibrnetestoque\\controllers\\atendimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:controllers\\atendimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|h:\\meu drive\\tcc - estoque brnet\\apibrnetestoque\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|c:\\users\\marco\\desktop\\brnet_app\\apibrnetestoque\\models\\controlekm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CAE3671-38BD-4E98-8289-F04FB439D4AB}|ApiBrnetEstoque.csproj|solutionrelative:models\\controlekm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,113 +42,123 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class.cs",
-              "DocumentMoniker": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Models\\Class.cs",
-              "RelativeDocumentMoniker": "Models\\Class.cs",
-              "ToolTip": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Models\\Class.cs",
-              "RelativeToolTip": "Models\\Class.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:50:19.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Veiculo.cs",
-              "DocumentMoniker": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Models\\Veiculo.cs",
-              "RelativeDocumentMoniker": "Models\\Veiculo.cs",
-              "ToolTip": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Models\\Veiculo.cs",
-              "RelativeToolTip": "Models\\Veiculo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:43:32.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
+              "DocumentIndex": 3,
+              "Title": "MovimentacaoEstoqueCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\DTOs\\movimentacaoEstoque\\MovimentacaoEstoqueCreateDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\movimentacaoEstoque\\MovimentacaoEstoqueCreateDto.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\DTOs\\movimentacaoEstoque\\MovimentacaoEstoqueCreateDto.cs*",
+              "RelativeToolTip": "DTOs\\movimentacaoEstoque\\MovimentacaoEstoqueCreateDto.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-22T02:23:23.973Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T03:46:29.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Title": "MovimentacaoEstoqueUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\DTOs\\movimentacaoEstoque\\MovimentacaoEstoqueUpdateDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\movimentacaoEstoque\\MovimentacaoEstoqueUpdateDto.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\DTOs\\movimentacaoEstoque\\MovimentacaoEstoqueUpdateDto.cs*",
+              "RelativeToolTip": "DTOs\\movimentacaoEstoque\\MovimentacaoEstoqueUpdateDto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T01:39:50.608Z",
+              "WhenOpened": "2025-04-28T03:45:50.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StockService.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Services\\StockService.cs",
+              "RelativeDocumentMoniker": "Services\\StockService.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Services\\StockService.cs*",
+              "RelativeToolTip": "Services\\StockService.cs*",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAQwIUAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T03:39:17.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Models\\Usuario.cs",
-              "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Title": "MovimentacaoEstoqueController.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Controllers\\MovimentacaoEstoqueController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MovimentacaoEstoqueController.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Controllers\\MovimentacaoEstoqueController.cs",
+              "RelativeToolTip": "Controllers\\MovimentacaoEstoqueController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwDkAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T01:39:16.053Z",
+              "WhenOpened": "2025-04-28T03:38:31.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MaterialController.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Controllers\\MaterialController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MaterialController.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Controllers\\MaterialController.cs*",
+              "RelativeToolTip": "Controllers\\MaterialController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T01:34:40.133Z",
+              "WhenOpened": "2025-04-28T03:38:20.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KmService.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Services\\KmService.cs",
+              "RelativeDocumentMoniker": "Services\\KmService.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Services\\KmService.cs",
+              "RelativeToolTip": "Services\\KmService.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAQwFUAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T03:28:12.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ApiBrnetEstoque.csproj",
-              "DocumentMoniker": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\ApiBrnetEstoque.csproj",
-              "RelativeDocumentMoniker": "ApiBrnetEstoque.csproj",
-              "ToolTip": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\ApiBrnetEstoque.csproj",
-              "RelativeToolTip": "ApiBrnetEstoque.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-20T01:03:07.508Z"
+              "Title": "AtendimentoController.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Controllers\\AtendimentoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AtendimentoController.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Controllers\\AtendimentoController.cs",
+              "RelativeToolTip": "Controllers\\AtendimentoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T03:24:16.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "H:\\Meu Drive\\tcc - estoque brnet\\ApiBrnetEstoque\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-20T01:01:05.961Z"
+              "Title": "Controlekm.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Models\\Controlekm.cs",
+              "RelativeDocumentMoniker": "Models\\Controlekm.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\brnet_app\\ApiBrnetEstoque\\Models\\Controlekm.cs",
+              "RelativeToolTip": "Models\\Controlekm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T03:22:24.114Z",
+              "EditorCaption": ""
             }
           ]
         }
